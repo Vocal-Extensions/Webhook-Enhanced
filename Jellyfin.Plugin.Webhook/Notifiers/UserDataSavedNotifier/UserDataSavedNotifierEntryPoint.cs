@@ -86,6 +86,7 @@ public class UserDataSavedNotifierEntryPoint : IHostedService
         dataObject["SaveReason"] = eventArgs.SaveReason.ToString();
         dataObject["NotificationUsername"] = username;
         dataObject["UserId"] = userId;
+        dataObject["UserIdN"] = user.Id.ToString("N");
 
         var scope = _applicationHost.ServiceProvider!.CreateAsyncScope();
         await using (scope.ConfigureAwait(false))

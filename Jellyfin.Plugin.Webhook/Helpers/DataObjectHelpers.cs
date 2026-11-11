@@ -296,7 +296,7 @@ public static class DataObjectHelpers
     public static Dictionary<string, object> AddUserData(this Dictionary<string, object> dataObject, UserDto user)
     {
         dataObject["NotificationUsername"] = user.Name.Escape();
-        dataObject["UserId"] = user.Id;
+        dataObject["UserIdN"] = user.Id.ToString("N");
         dataObject[nameof(user.LastLoginDate)] = user.LastLoginDate ?? DateTime.UtcNow;
         dataObject[nameof(user.LastActivityDate)] = user.LastActivityDate ?? DateTime.MinValue;
 
@@ -312,7 +312,7 @@ public static class DataObjectHelpers
     public static Dictionary<string, object> AddUserData(this Dictionary<string, object> dataObject, User user)
     {
         dataObject["NotificationUsername"] = user.Username.Escape();
-        dataObject["UserId"] = user.Id;
+        dataObject["UserIdN"] = user.Id.ToString("N");
         dataObject[nameof(user.LastLoginDate)] = user.LastLoginDate ?? DateTime.UtcNow;
         dataObject[nameof(user.LastActivityDate)] = user.LastActivityDate ?? DateTime.MinValue;
 
@@ -333,6 +333,7 @@ public static class DataObjectHelpers
         }
 
         dataObject[nameof(sessionInfo.UserId)] = sessionInfo.UserId;
+        dataObject["UserIdN"] = sessionInfo.UserId.ToString("N");
         dataObject["NotificationUsername"] = sessionInfo.UserName.Escape();
         dataObject[nameof(sessionInfo.Client)] = sessionInfo.Client.Escape();
         dataObject[nameof(sessionInfo.LastActivityDate)] = sessionInfo.LastActivityDate;
@@ -366,6 +367,7 @@ public static class DataObjectHelpers
         }
 
         dataObject[nameof(sessionInfo.UserId)] = sessionInfo.UserId;
+        dataObject["UserIdN"] = sessionInfo.UserId.ToString("N");
         dataObject["NotificationUsername"] = sessionInfo.UserName.Escape();
         dataObject[nameof(sessionInfo.Client)] = sessionInfo.Client.Escape();
         dataObject[nameof(sessionInfo.LastActivityDate)] = sessionInfo.LastActivityDate;
