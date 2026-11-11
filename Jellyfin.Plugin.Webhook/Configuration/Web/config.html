@@ -1,11 +1,10 @@
-<div data-role="page" id="webhookConfigurationPage" class="page type-interior pluginConfigurationPage fullWidthContent"
-     data-controller="__plugin/Webhook.js">
+<div data-role="page" id="webhookConfigurationPage" class="page type-interior pluginConfigurationPage fullWidthContent" data-controller="__plugin/Webhook Enhanced.js">
     <div class="content-primary">
         <div class="verticalSection">
             <div class="sectionTitleContainer">
-                <h2 class="sectionTitle">Webhook</h2>
+                <h2 class="sectionTitle">Webhook Enhanced</h2>
                 <a is="emby-linkbutton" class="raised raised-mini" style="margin-left: 2em;" target="_blank"
-                   href="https://github.com/crobibero/jellyfin-plugin-webhook">
+                   href="https://github.com/Vocal-Extensions/Webhook-Enhanced">
                     <i class="md-icon button-icon button-icon-left secondaryText"></i>
                     <span>Help</span>
                 </a>
@@ -122,6 +121,10 @@
             <label class="checkboxContainer">
                 <input is="emby-checkbox" type="checkbox" data-name="chkEnableVideos"/>
                 <span>Videos</span>
+            </label>
+            <label class="checkboxContainer">
+                <input is="emby-checkbox" type="checkbox" data-name="chkEnableLiveTv"/>
+                <span>Live TV</span>
             </label>
             <label class="checkboxContainer">
                 <input is="emby-checkbox" type="checkbox" data-name="chkSendAllProperties"/>
