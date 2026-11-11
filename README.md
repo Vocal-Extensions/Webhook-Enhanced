@@ -5,7 +5,7 @@
 
 ## Debugging:
 #### My webhook isn't working!
-Change your `logging.json` file to output `debug` logs for `Jellyfin.Plugin.Webhook`. Make sure to add a comma to the end of `"System": "Warning"`
+Change your `logging.json` file to output `debug` logs for `WebhookEnhanced`. Make sure to add a comma to the end of `"System": "Warning"`
 ```diff
 {
     "Serilog": {
@@ -14,7 +14,7 @@ Change your `logging.json` file to output `debug` logs for `Jellyfin.Plugin.Webh
             "Override": {
                 "Microsoft": "Warning",
                 "System": "Warning",
-+               "Jellyfin.Plugin.Webhook": "Debug"
++               "WebhookEnhanced": "Debug"
             }
         }
 
@@ -40,7 +40,7 @@ Example test data for a movie added notification:
 ## Documentation:
 Use [Handlebars](https://handlebarsjs.com/guide/) templating engine to format notifications however you wish.
 
-See [Templates](Jellyfin.Plugin.Webhook/Templates) for sample templates.
+See [Templates](WebhookEnhanced/Templates) for sample templates.
 
 #### Helpers:
 
@@ -67,7 +67,7 @@ See [Templates](Jellyfin.Plugin.Webhook/Templates) for sample templates.
     - ServerUrl
         - Server url
     - NotificationType
-        - The [NotificationType](Jellyfin.Plugin.Webhook/Destinations/NotificationType.cs)
+        - The [NotificationType](WebhookEnhanced/Destinations/NotificationType.cs)
 
 - Every Notifier: User
     - NotificationUsername

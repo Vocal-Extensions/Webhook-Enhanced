@@ -11,7 +11,7 @@ description: >
 
 category: "Administration"
 artifacts:
-  - "Jellyfin.Plugin.Webhook.dll"
+  - "WebhookEnhanced.dll"
   - "Handlebars.dll"
   - "MailKit.dll"
   - "MimeKit.dll"
