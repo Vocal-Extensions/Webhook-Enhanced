@@ -1,20 +1,7 @@
-<h1 align="center">Jellyfin Webhook Plugin</h1>
-<h3 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h3>
-
-<p align="center">
-<img alt="Plugin Banner" src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/plugins/SVG/jellyfin-plugin-webhook.svg?sanitize=true"/>
-<br/>
-<br/>
-<a href="https://github.com/jellyfin/jellyfin-plugin-webhook/actions?query=workflow%3A%22Test+Build+Plugin%22">
-<img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/jellyfin/jellyfin-plugin-webhook/.github/workflows/test.yaml?branch=main">
-</a>
-<a href="https://github.com/jellyfin/jellyfin-plugin-webhook">
-<img alt="GPLv3 License" src="https://img.shields.io/github/license/jellyfin/jellyfin-plugin-webhook.svg"/>
-</a>
-<a href="https://github.com/jellyfin/jellyfin-plugin-webhook/releases">
-<img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-plugin-webhook.svg"/>
-</a>
-</p>
+<div align="center">
+    <h1 style="border: 0px solid transparent;margin-bottom: 2px;">Webhook Enhanced</h1>
+    <p>Sends notifications to various platforms & destinations via webhooks.</p>
+</div>
 
 ## Debugging:
 #### My webhook isn't working!
@@ -309,4 +296,4 @@ See [Templates](Jellyfin.Plugin.Webhook/Templates) for sample templates.
     - SlackIconUrl
 
 Future events can be created
-from https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Server.Implementations/Events/EventingServiceCollectionExtensions.cs
+from [Jellyfin Documentation](https://github.com/jellyfin/jellyfin/blob/master/Jellyfin.Server.Implementations/Events/EventingServiceCollectionExtensions.cs)

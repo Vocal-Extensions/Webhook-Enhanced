@@ -1,4 +1,4 @@
-name: '🏷️ Sync labels'
+name: 'Sync labels'
 
 on:
   schedule:
@@ -7,6 +7,6 @@ on:
 
 jobs:
   call:
-    uses: jellyfin/jellyfin-meta-plugins/.github/workflows/sync-labels.yaml@master
+    uses: Vocal-Extensions/Plugin-Workflows/.github/workflows/sync-labels.yaml@main
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,18 +1,18 @@
-name: '🏗️ Build Plugin'
+name: 'Build Plugin'
 
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - '**/*.md'
   pull_request:
     branches:
-      - master
+      - main
     paths-ignore:
       - '**/*.md'
   workflow_dispatch:
 
 jobs:
   call:
-    uses: jellyfin/jellyfin-meta-plugins/.github/workflows/build.yaml@master
+    uses: Vocal-Extensions/Plugin-Workflows/.github/workflows/build.yaml@main

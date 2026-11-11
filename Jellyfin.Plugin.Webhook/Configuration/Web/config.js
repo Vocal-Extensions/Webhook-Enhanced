@@ -32,7 +32,7 @@ export default function (view) {
     }
 
     const Webhook = {
-        pluginId: "71552A5A-5C5C-4350-A2AE-EBE451A30173",
+        pluginId: "0995f2af-377a-4aea-8977-0c88e4d83119",
 
         configurationWrapper: document.querySelector("#configurationWrapper"),
 

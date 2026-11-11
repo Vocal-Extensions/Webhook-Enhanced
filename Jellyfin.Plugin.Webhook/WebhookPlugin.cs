@@ -13,7 +13,7 @@ namespace Jellyfin.Plugin.Webhook;
 /// </summary>
 public class WebhookPlugin : BasePlugin<PluginConfiguration>, IHasWebPages
 {
-    private readonly Guid _id = new("71552A5A-5C5C-4350-A2AE-EBE451A30173");
+    private readonly Guid _id = new("0995f2af-377a-4aea-8977-0c88e4d83119");
 
     /// <summary>
     /// Initializes a new instance of the <see cref="WebhookPlugin"/> class.
@@ -35,10 +35,10 @@ public class WebhookPlugin : BasePlugin<PluginConfiguration>, IHasWebPages
     public override Guid Id => _id;
 
     /// <inheritdoc />
-    public override string Name => "Webhook";
+    public override string Name => "Webhook Enhanced";
 
     /// <inheritdoc />
-    public override string Description => "Sends notifications to various services via webhooks.";
+    public override string Description => "Sends notifications to various platforms & destinations via webhooks.";
 
     /// <inheritdoc />
     public IEnumerable<PluginPageInfo> GetPages()
