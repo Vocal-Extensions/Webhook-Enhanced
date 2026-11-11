@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using MailKit.Security;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System.Linq;
-using System.Threading;
 using MimeKit;
 
 namespace Jellyfin.Plugin.Webhook.Destinations.Smtp;
@@ -59,7 +59,7 @@ public class SmtpClient : BaseClient, IWebhookClient<SmtpOption>
                     .ConfigureAwait(false);
             }
 
-            await smtpClient.SendAsync(message, message.From.Mailboxes.First(), message.To.Mailboxes, System.Threading.CancellationToken.None).ConfigureAwait(false);
+            await smtpClient.SendAsync(message).ConfigureAwait(false);
         }
         catch (Exception e)
         {
