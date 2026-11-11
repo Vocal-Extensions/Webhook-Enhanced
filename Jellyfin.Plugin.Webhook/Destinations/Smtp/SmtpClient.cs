@@ -51,8 +51,7 @@ public class SmtpClient : BaseClient, IWebhookClient<SmtpOption>
 
             using var smtpClient = new MailKit.Net.Smtp.SmtpClient();
             var secureSocketOptions = option.UseSsl ? SecureSocketOptions.SslOnConnect : SecureSocketOptions.None;
-            await smtpClient.ConnectAsync(option.SmtpServer, option.SmtpPort, secureSocketOptions)
-                .ConfigureAwait(false);
+            await smtpClient.ConnectAsync(option.SmtpServer.Trim(), option.SmtpPort, secureSocketOptions).ConfigureAwait(false);
             if (option.UseCredentials)
             {
                 await smtpClient.AuthenticateAsync(option.Username, option.Password)
